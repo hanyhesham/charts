@@ -146,11 +146,12 @@ service:
   loadBalancerSourceRanges: []
   externalTrafficPolicy:
 
+
 ingress:
-  enabled: false
+  enabled: true
   hosts:
-    core: core.harbor.domain
-    notary: notary.harbor.domain
+    core: harbor-ocp-harbor.apps.us-ocp.ocp.hhesham.com
+    notary: notary-ocp-harbor.apps.us-ocp.ocp.hhesham.com
   controller: default
   annotations:
     ingress.kubernetes.io/ssl-redirect: "true"
