@@ -161,7 +161,6 @@ ingress:
 externalURL: https://core.harbor.domain
 
 containerSecurityContext:
-  runAsUser: auto
   runAsNonRoot: true
 
 podSecurityContext:
